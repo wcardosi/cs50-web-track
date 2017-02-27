@@ -1,0 +1,72 @@
+
+#browse-carousel {
+    max-width: 300px;
+    margin: auto;
+}
+
+.well {
+	background-color: red;
+	color: white;
+	border-width: 0px;
+}
+
+
+.carousel-inner {
+	padding-left: 0px;
+	
+}
+
+#add-to-watchlist {
+	width: 100%;
+}
+
+.jumbotron {
+	text-align: center;
+	margin-bottom: 1%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#section-watchlist {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#section-watchlist li {
+	padding: 0px;
+	margin: 0px 4% 4% 0px;
+	width: 160px;
+}
+
+
+#section-watchlist li button {
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+#section-watchlist ul {
+	text-align: center;
+}	
+
+
+.main-content {
+	color: gray;
+}
+
+#section-browse {
+	background: black;	
+}
+
+#section-browse form {
+	margin-bottom: 2%;
+}
+
+section header {
+	margin-bottom: 10px;
+}
+
+section {
+	padding: 2%;
+}
+
