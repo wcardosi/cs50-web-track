@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name=viewport content="width=device-width, initial-scale=1">
 
-  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>  
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
 
   <!--
   TODO add bootstrap js script
@@ -31,10 +31,10 @@
         <h2>My Watchlist</h2>
         <hr/>
       </header>
-  
+
       <ul class="list-inline"></ul>
     </section>
-  
+
     <section id="section-browse" class="container-fluid">
       <div class="row">
         <div class="col-sm-8">
@@ -51,9 +51,9 @@
                     <li class="item active">
                       <img src="">
                     </li>
-                    
+
                   </ul>
-                  
+
                   <!-- Controls -->
                   <a class="left carousel-control" href="#browse-carousel" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
@@ -61,7 +61,7 @@
                   <a class="right carousel-control" href="#browse-carousel" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   </a>
-                  
+
                 </div>
                 <button id="add-to-watchlist">Add to Watchlist</button>
               </div>
@@ -69,14 +69,14 @@
           </div>
         </div>
       <!-- TODO
-      Rearrange the layout of this section using the Bootstrap grid system to match the specification 
+      Rearrange the layout of this section using the Bootstrap grid system to match the specification
       -->
         <div class="col-sm-4">
           <header>
             <h2>Browse Movies</h2>
             <hr/>
           </header>
-          
+
           <form id="form-search">
             <div class="input-group">
               <input type="text" class="form-control" name="query" placeholder="ex: Comedy" />
@@ -92,8 +92,8 @@
 
   <footer class="container">
     <p>
-      2016 LaunchCode | 
-      <a href="https://github.com/LaunchCodeEducation/flicklist">Fork me on Github</a>
+      2016 Wayne Cardosi |
+      <a href="https://github.com/wcardosi/web-track">FlickList on Github</a>
     </p>
   </footer>
 
@@ -105,29 +105,29 @@
         var query = $("#form-search input[name=query]").val();
         searchMovies(query, render);
       });
-      
+
       // add event handler to the "Add to Watchlist" button
       $("#add-to-watchlist").click(function() {
         addActiveMovie();
         render();
       });
-      
+
       // add event handler for when the carousel has slid
       $("#browse-carousel").on("slid.bs.carousel", function() {
         console.log("slid");
         var newIndex = $("#browse-carousel").find(".active").index();
-        
-        // TODO 
+
+        // TODO
         // update the model and then re-render
         console.log(newIndex);
         model.activeMovieIndex = newIndex;
         render();
       });
-      
+
       // initial fetch
       searchMovies("", render);
     });
   </script>
 
-</body> 
+</body>
 </html>
